@@ -1,8 +1,23 @@
+@use "abstracts/vars/colors" as c;
+
 html{
    font-size: 18px;
    font-family: "Barlow Condensed", sans-serif;
+   
+   &::after{
+      content:"";
+      background-color: c.$light-grayish-blue;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 58%;
+      height: 500px;
+      border-bottom-left-radius: 100px;
+   }
 }
 
 body{
+   overflow-x: hidden;
    min-height: 100vh;
 }

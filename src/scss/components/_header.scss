@@ -106,14 +106,15 @@
 
    @media screen and (min-width: 768px){
       flex-direction: row;
+      background: none;
    }
 
    &__item{
-      color: c.$very-dark-blue;
+      color: #000;
       
       &--light{
          color: c.$grayish-blue;
-         
+
          @media screen and (max-width: 768px){
             border-top: 1px solid c.$grayish-blue;
             margin-top: 15px;
@@ -143,6 +144,8 @@
 
    &__link{
       cursor: pointer;
+      text-decoration: none;
+      color: inherit;
 
       @media screen and (min-width: 768px){
          &:hover{
