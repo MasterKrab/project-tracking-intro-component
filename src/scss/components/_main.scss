@@ -1,0 +1,42 @@
+.main{
+   max-width: 1800px;
+   margin-left: auto;
+   margin-right: auto;
+
+
+   @media screen and (min-width: 1250px){
+      display: grid;
+      grid-template-columns: 1fr 800px;
+      justify-content: center;
+   }
+
+   &__illustration{
+      margin-top: 50px;
+      background-image: url(../assets/img/illustration-devices.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      min-height: 250px;
+
+      @media screen and (min-width: 500px){
+         background-size: contain;
+         background-position: center;
+      }
+      
+      @media screen and (min-width: 1250px){
+         background-position: 100% 0;
+         background-size: 700px;
+         order: 2;
+         min-height: 500px;
+      }
+      
+      @media screen and (min-width: 1350px){
+         background-position: 0 0;
+         background-size: 1000px;
+      }
+
+      @media screen and (min-width: 1650px){
+         background-size: contain;
+      }
+   }
+}

@@ -4,7 +4,7 @@ html(lang="en")
       meta(charset="UTF-8")
       meta(http-equiv="X-UA-Compatible", content="IE=edge")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
-      title Huddle landing page with curved section
+      title Project tracking intro component
       //- Favicons
       link(rel="apple-touch-icon", sizes="57x57", href="assets/favicons/apple-icon-57x57.png")
       link(rel="apple-touch-icon", sizes="60x60", href="assets/favicons/apple-icon-60x60.png")
@@ -25,4 +25,41 @@ html(lang="en")
       meta(name="theme-color", content="#ffffff")
       //- CSS
       link(rel="stylesheet", href="css/styles.css")
+      //- Fonts
+      link(rel="preconnect", href="https://fonts.gstatic.com")
+      //- Barlow Condensed, Barlow
+      link(href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap", rel="stylesheet")
    body
+      header.header 
+         .top-bar
+            img.top-bar__logo(src="assets/img/logo.svg", alt="logo")
+            .icon-menu#menu-icon
+               .icon-menu__bar
+         nav
+            ul.menu#main-menu
+               li.menu__item
+                  a.menu__link Product
+               li.menu__item 
+                  a.menu__link Features
+               li.menu__item 
+                  a.menu__link Pricing
+               li.menu__item.menu__item--light
+                  a.menu__link Login
+      main.main 
+         .main__illustration 
+         article.card 
+            .card__top
+               p.card__new New
+               p.card__dashboard Monograph Dashboard
+            h1.card__title
+               |Powerful insights 
+               br
+               |into your team
+            p.card__text 
+               |Project planning and time tracking 
+               br
+               |for agile teams
+            .card__footer
+               a.card__demo Schedule a demo
+               a.card__preview to see a live preview
+      script(src="js/scripts-min.js") 
